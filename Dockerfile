@@ -3,8 +3,8 @@ FROM golang
 ARG app_env
 ENV APP_ENV $app_env
 
-COPY ./Web /go/src/github.com/mitch-strong/GoWeb/Web
-WORKDIR /go/src/github.com/mitch-strong/GoWeb/Web
+COPY ./Web /go/src/github.com/Bio-core/GoWeb/Web
+WORKDIR /go/src/github.com/Bio-core/GoWeb/Web
 
 RUN go get ./
 RUN go build

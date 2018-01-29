@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	keycloak "github.com/mitch-strong/keycloakgo"
+	keycloak "github.com/Bio-core/keycloakgo"
 )
 
 //hosting variables defined in flags
