@@ -30,6 +30,9 @@ func main() {
 
 	addKeycloak(keycloakserver, server)
 
+	DatabaseInit("GoWeb", "mongodb://localhost:27017/")
+	Test()
+
 	router := NewRouter()
 	//Stats hosting on the constant port
 	log.Fatal(http.ListenAndServe(":"+localport, router))
